@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStory", "BookStory\BookStory.csproj", "{30135C76-844D-4337-B5C6-0BCAB65927E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStory.Domain", "BookStory.Domain\BookStory.Domain.csproj", "{3A594D53-B87F-4EB6-95CF-A20517D039DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStory.Data", "BookStory.Data\BookStory.Data.csproj", "{3D91EC64-EF6B-4372-9018-15C04EBD4D1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{07DEE1FF-27B8-4DAD-9284-0A860C28E67B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		Book StoryTests.postman_collection_v2.0.json = Book StoryTests.postman_collection_v2.0.json
+		Book StoryTests.postman_collection_v2.1.json = Book StoryTests.postman_collection_v2.1.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30135C76-844D-4337-B5C6-0BCAB65927E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30135C76-844D-4337-B5C6-0BCAB65927E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30135C76-844D-4337-B5C6-0BCAB65927E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30135C76-844D-4337-B5C6-0BCAB65927E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A594D53-B87F-4EB6-95CF-A20517D039DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A594D53-B87F-4EB6-95CF-A20517D039DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A594D53-B87F-4EB6-95CF-A20517D039DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A594D53-B87F-4EB6-95CF-A20517D039DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D91EC64-EF6B-4372-9018-15C04EBD4D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D91EC64-EF6B-4372-9018-15C04EBD4D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D91EC64-EF6B-4372-9018-15C04EBD4D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D91EC64-EF6B-4372-9018-15C04EBD4D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "3b91afc6-6255-47ca-a498-4406c9763784",
+		"name": "Book StoryTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL AUTHORS",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL BOOKS",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL GENRES",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get authors by bookId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5018/api/books/1/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"1",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get books by authorId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create author 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Пушкин А.С.\",\r\n    \"birthDate\": \"1799-06-06T00:01:00.0Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create author 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Толстой Л.Н.\",\r\n    \"birthDate\": \"1828-09-09T00:01:00.0Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create author 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Петров Петр Петрович (выдуманный)\",\r\n    \"birthDate\": \"2023-01-17T20:09:36.396Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Евгений Онегин\",\r\n    \"publishYear\": 1833,\r\n    \"genreId\": 2,\r\n    \"editorialOfficeName\": \"САНКТПЕТЕБУРГЪ типографии Александра Смирдина\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book With Unknown Genre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ВОЙНА И МИР\",\r\n    \"publishYear\": 1939,\r\n    \"genreId\": 1,\r\n    \"editorialOfficeName\": \"Москва\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ВОЙНА И МИР\",\r\n    \"publishYear\": 1939,\r\n    \"genreId\": 1,\r\n    \"editorialOfficeName\": \"Москва\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ВОЙНА И МИР\",\r\n    \"publishYear\": 1939,\r\n    \"genreId\": 1,\r\n    \"editorialOfficeName\": \"Москва\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add author to book:authors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5018/api/books/1/authors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"1",
+						"authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add book to  author:books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5018/api/books/1/authors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"1",
+						"authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete author from book:authors",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5018/api/books/2/authors/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"2",
+						"authors",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book from author:books",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5018/api/books/2/authors/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"2",
+						"authors",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete author",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5018/api/books/2/authors/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"2",
+						"authors",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5018/api/books/2/authors/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"2",
+						"authors",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book Info",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Измененная книга Война и Мир\",\r\n    \"publishYear\": 2018,\r\n    \"genreId\": 1,\r\n    \"editorialOfficeName\": \"fdsfasdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Author Info",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Измененная книга Война и Мир\",\r\n    \"publishYear\": 2018,\r\n    \"genreId\": 1,\r\n    \"editorialOfficeName\": \"fdsfasdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5018/api/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5018",
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
