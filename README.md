@@ -1,5 +1,7 @@
 # Book Story
 
+Приложение является реализацией REST API сервиса для работы с сущностями связи `many-to-many`.
+
 ## Технологии
 
 - [.NET 5.0.4](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
