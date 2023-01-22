@@ -9,7 +9,6 @@ using BookStory.Domain.Details;
 using BookStory.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace BookStory.Controllers

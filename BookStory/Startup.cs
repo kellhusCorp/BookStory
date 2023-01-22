@@ -1,7 +1,5 @@
 using System;
 using System.Linq;
-using System.Net.Sockets;
-using System.Text.Json.Serialization;
 using BookStory.Data.Contexts;
 using BookStory.Data.Seeders;
 using BookStory.Extensions;
